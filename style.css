@@ -1,0 +1,51 @@
+* {
+ text-align: center;
+}
+
+body{
+  width: 100%;
+}
+
+/* Titolo/info */
+h2{
+  margin-bottom: 100px;
+}
+
+/* Scelte */
+h3{
+  font-size: 50px;
+}
+
+a{
+ text-decoration: none;
+ color: black;
+}
+
+/* Risultato */
+ #vero{
+  font-size: 200px;
+  animation-name: example;
+  animation-duration: 10s;
+  text-align: center;
+}
+
+@keyframes example {
+  from {color:#ff0000;}
+  to {color: #e40000;}
+  to {color: #ca0000;}
+  to {color: #ab0000;}
+  to {color: #7d0000;}
+  to {color: #5a0000;}
+  to {color: #460000;}
+  to {color: #320000;}
+  to {color: #1c0000;}
+}
+
+/* Pulsante conferma */
+button{
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 50px;
+  background: black;
+  color: white;
+}
