@@ -2,27 +2,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Carta-forbici-sasso</title>
   </head>
   <body>
 
-    <!-- Titolo/Info -->
+    <!-- Inizio Titolo/Info -->
     <h1 id="titolo">Benvenuto</h1>
     <h2 id="informazioni">Fai la tua scelta</h2>
+    <!-- Fine Titolo/Info -->
 
-    <!-- Scelte -->
-    <h3 id="carta" onclick="cliccatoCarta()"><a href="#">CARTA</a></h3>
-    <h3 id="forbici" onclick="cliccatoForbici()"><a href="#">FORBICI</a></h3>
-    <h3 id="sasso" onclick="cliccatoSasso()"><a href="#">SASSO</a></h3>
+  
 
-    <!-- Risultato -->
-    <h1 id="vero"></h1>
+    <!-- Inizio Scelte -->
+    <div id="scelte">
+      <h3 id="carta" onclick="cliccatoCarta()"><a href="#">CARTA</a></h3>
+      <h3 id="forbici" onclick="cliccatoForbici()"><a href="#">FORBICI</a></h3>
+      <h3 id="sasso" onclick="cliccatoSasso()"><a href="#">SASSO</a></h3>
+  </div>
+    <!-- Fine Scelte -->
 
-    <!-- Pulsante conferma -->
+
+    
+
+
+    <!-- Inizio Pulsante conferma -->
     <button id="pulsante" onclick="verdetto()">Conferma</button>
 
-    <!-- JavaScript -->
+    <!-- Inizio Risultato -->
+    <h1 id="vero"></h1>
+    <!-- Fine Risultato -->
+    
+
+
+    <button id="return" onClick="history.go(0);"></button> <!-- pulsante per tornare indietro con onClick il pulsante ricarica la pagina-->
+    <!-- Fine Pulsante conferma -->
+
+    <h1 id="vero"></h1>
+    <!-- Link JavaScript -->
     <script src="app.js"></script>
+
   </body>
 </html>

@@ -1,9 +1,5 @@
 
 
-// Scelta del nome
-let nomeGiocatore = window.prompt('Ciao, inserisci il tuo nome: ');
-document.getElementById('titolo').innerHTML = 'Benvenuto ' + nomeGiocatore;
-
 
 // variabili
 let string = ['carta', 'forbici', 'sasso'];
@@ -28,12 +24,18 @@ function cliccatoSasso() {
    sceltaUtente = 'sasso';
 }
 
+// Verdetto
 function verdetto() {
+     
+   document.getElementById('titolo').style.display = 'none';
    document.getElementById('carta').style.display = 'none';
    document.getElementById('forbici').style.display = 'none';
    document.getElementById('sasso').style.display = 'none';
-   document.getElementById('pulsante').style.display = 'none';
+   document.getElementById('pulsante').style.display = 'none'; // Pulsante conferma che scompare al secondo step di pagina
+   document.getElementById('scelte').style.display = 'none';
+   
 
+   // Calcolo Decisione
    if (sceltaUtente == 'carta' && sceltaComputer ==  'forbici') {
         document.getElementById('vero').innerHTML = 'HAI PERSO';
    }
@@ -62,5 +64,12 @@ function verdetto() {
         document.getElementById('vero').innerHTML = 'PAREGGIO';
    }
 
-    document.getElementById('informazioni').innerHTML = 'Il computer ha scelto ' + sceltaComputer + '. Tu hai scelto ' + sceltaUtente;
+
+   // Scelta finale scritta
+    document.getElementById('informazioni').innerHTML = 'Il computer ha scelto ' + sceltaComputer + '. Tu hai scelto ' + sceltaUtente + ' !!';
+
+    // Pulsanti
+    document.getElementById('return').innerHTML = 'RETURN'; // Scrive il testo al pulsante
+    document.getElementById('return').style.display = 'inline'; // Riattiva il pulsante quando passa all altra pagina
+
  }
