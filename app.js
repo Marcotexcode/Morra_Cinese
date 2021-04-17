@@ -71,5 +71,6 @@ function verdetto() {
     // Pulsanti
     document.getElementById('return').innerHTML = 'RETURN'; // Scrive il testo al pulsante
     document.getElementById('return').style.display = 'inline'; // Riattiva il pulsante quando passa all altra pagina
-
+    
  }
+ 
